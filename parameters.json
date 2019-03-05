@@ -1,0 +1,34 @@
+[
+    {
+        "ParameterKey": "pAvailabilityZones",
+        "ParameterValue": "eu-west-1a, eu-west-1b"
+    },
+    {
+        "ParameterKey": "pVPCProductionName",
+        "ParameterValue": "Production-2-VPC"
+    },
+    {
+        "ParameterKey": "pVPCProductionCIDR",
+        "ParameterValue": "10.110.0.0/16"
+    },
+    {
+        "ParameterKey": "pProdAppPrivateSubnetACIDR",
+        "ParameterValue": "10.110.0.0/19"
+    },
+    {
+        "ParameterKey": "pProdAppPrivateSubnetBCIDR",
+        "ParameterValue": "10.110.32.0/19"
+    },
+    {
+        "ParameterKey": "pRenderFarmTargetCapacity",
+        "ParameterValue": "2"
+    },
+    {
+        "ParameterKey": "pProjectName",
+        "ParameterValue": "MyProject"
+    },
+    {
+        "ParameterKey": "pEnvironment",
+        "ParameterValue": "DEV"
+    }
+]
