@@ -1,2 +1,2 @@
-# aws-multi-vpc-spot-fleet
-Cloud formation template to deploy multiple peered VPC with Spot Fleet instances
+# cfn-vpc-vfx-extension
+Cloud formation template to deploy additional vpc for quickstart-vfx-ise
