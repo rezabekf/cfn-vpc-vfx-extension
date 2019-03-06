@@ -634,6 +634,30 @@ Resources:
                 AvailabilityZone: !Select [1, !Ref pAvailabilityZones]
                 SubnetId: !Ref rProdAppPrivateSubnetB
 
+  rRenderFarmToLicenseServerIngress:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !ImportValue eLicenseServerSecurityGroup
+      Description: render-farm-sg
+      IpProtocol: '-1'
+      SourceSecurityGroupId: !Ref rRenderFarmSecurityGroup
+
+  rRenderSchedulerToRenderFarmIngress:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !Ref rRenderFarmSecurityGroup
+      Description: render-scheduler-sg
+      IpProtocol: '-1'
+      SourceSecurityGroupId: !ImportValue eRenderSchedulerSecurityGroup
+
+  rRenderFarmToRenderSchedulerIngress:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId: !ImportValue eRenderSchedulerSecurityGroup
+      Description: render-farm-sg
+      IpProtocol: '-1'
+      SourceSecurityGroupId: !Ref rRenderFarmSecurityGroup
+
 Outputs:
   rVPCProduction:
     Value: !Ref rVPCProduction
