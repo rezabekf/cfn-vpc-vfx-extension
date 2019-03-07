@@ -1,6 +1,7 @@
 # cfn-vpc-vfx-extension
 Cloud formation template to deploy additional vpc for [quickstart-vfx-ise](https://github.com/aws-quickstart/quickstart-vfx-ise).
 
+**! Important !**
 This is extension only and will not work without [quickstart-vfx-ise](https://github.com/aws-quickstart/quickstart-vfx-ise) framework deployed first.
 
 #### Prerequisites:
