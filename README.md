@@ -3,14 +3,14 @@ Cloud formation template to deploy additional vpc for [quickstart-vfx-ise](https
 
 This is extension only and will not work without [quickstart-vfx-ise](https://github.com/aws-quickstart/quickstart-vfx-ise) framework deployed first.
 
-####Prerequisites:
+#### Prerequisites:
 - Successfully deployed [quickstart-vfx-ise](https://github.com/aws-quickstart/quickstart-vfx-ise) framework.
 
 - Make sure to deploy both Cloud Formation templates in a same AWS Region.
 
-####Deployment:
+#### Deployment:
 
-- *Option 1:* via AWS console
+- **Option 1: via AWS console**
 > Go to https://console.aws.amazon.com/cloudformation/
 
 > Double check that [quickstart-vfx-ise](https://github.com/aws-quickstart/quickstart-vfx-ise) is in Status CREATE COMPLETE.
@@ -19,7 +19,7 @@ This is extension only and will not work without [quickstart-vfx-ise](https://gi
 
 > Create Stack 
 
-- *Option 2:* using AWS Command Line
+- **Option 2: via AWS Command Line**
 > from within the cfn-vpc-vfx-extension directory run command bellow 
 
 `aws cloudformation create-stack --stack-name <MyStack> --template-body file://vpc-extension.template --parameters file://parameters.json --capabilities CAPABILITY_IAM --region <AWS-Region>`
